@@ -1,0 +1,407 @@
+
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Public Question</title>
+      <!-- Tell the browser to be responsive to screen width -->
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+      <!-- Bootstrap 3.3.7 -->
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css">
+      <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/public-question-styles.css">
+      <link rel="stylesheet" href="css/bootstrap3-wysihtml5.min">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   </head>
+   <body>
+      <div class="container-fluid" style="padding-left:0;padding-right:0;">
+         <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+               <div class="header-top-wrapper">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                           <div class="question-logo">
+                              <img src="images/question-images/ic_proshno.svg" alt="question" height="42" width="42"> 
+                           </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                           <form class="navbar-form" role="search">
+                              <div class="input-group" style="width:100%;">
+                                 <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term" style="height: 36px;">
+                                 <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit" style="height: 36px;"><i class="glyphicon glyphicon-search"></i></button>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                           <div class="gossip-logo">
+                              <img src="images/question-images/ic_adda.svg"> 
+                           </div>
+                           <div  class="top-navbar-right">
+							<div class="user-without-login" style="display:none;">
+                              <a href="#" target="_blank" class="login-user" > 
+                                 <img src="images/question-images/ic_user.svg" alt="question" height="16" width="16"> <span>লগইন </span>
+                              </a>
+							  </div>
+						
+							<div class="user-with-login dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  <span class="notification">
+									<img src="images/question-images/ic_notification.svg" alt="question" width="16" height="16">
+								  </span>
+								  <span class="user-img-span"><img class="img-responsive img-circle" src="images/question-images/user.jpg" width="20"></span>
+								  <span class="user-name">
+										তৌফিক পিয়াস
+									<img src="images/question-images/ic_down_arrow.svg" alt="question" width="16" height="16">
+								  </span>
+							</div>
+							  
+							  <ul class="dropdown-menu">
+    
+								  <li>
+									<a href="#" title="Select this card">	
+										<div class="user-login-icon">
+											<span><i class="fa fa-user" aria-hidden="true"></i></span><span>তৌফিক পিয়াস</span>																
+										</div>
+									</a>
+								  </li>
+								  <li>
+									<a href="#" title="Select this card">	
+										<div class="logout">
+																			
+											<span><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+											<span>লগআউট</span>
+																			
+										</div>	
+									</a>
+								  </li>
+								  
+								</ul>
+							  
+							  	<div class="user-login-wrapper" style="display:none;">
+									<div class="user-profile-menu user-profile-menu-right min-width-200 show" aria-labelledby="page-header-user-dropdown" x-placement="bottom-end">                   
+										<div class="user-login-icon">
+											<span><i class="fa fa-user" aria-hidden="true"></i></span><span>তৌফিক পিয়াস</span>																
+										</div>
+										
+										<div class="logout">
+											<span><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+											<span>লগআউট</span>
+											
+										</div>																	              
+									</div>
+									               
+								</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+	  
+      <div class="container-fluid"style="padding-left:0;padding-right:0;" >
+         <div class="row" >
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+               <div style="background-color:#F5F5F5;">
+                  <div class="container">
+                     <div class="row">
+                        <div class="mb-15 mb-10">
+                     
+                              <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                 <div class="left-sidebar-container">
+								
+                                    <div class="sidenav">
+									 <div class="section-title">
+										<h2 class="title">টপিক </h2>
+									</div>
+                                       <ul>
+                                          <li><a dir="ltr" href="#">স্বাস্থ্য তথ্য <span>(৬,৪৪৮)</span>  </a></li>
+                                          <li><a dir="ltr" href="#"> জীবনের ভাবনা <span>(৬,২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">কম্পিউটার ও ইন্টারনেট<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">সাধারণ জ্ঞান<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">লাইফস্টাইল <span>(৬,৪৪৮)</span> </a></li>
+                                          <li><a dir="ltr" href="#">স্বাস্থ্য তথ্য <span>(৬,৪৪৮)</span>  </a></li>
+                                          <li><a dir="ltr" href="#"> জীবনের ভাবনা <span>(৬,২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">কম্পিউটার ও ইন্টারনেট<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">সাধারণ জ্ঞান<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">লাইফস্টাইল <span >(৬,৪৪৮)</span> </a></li>
+                                          <li><a dir="ltr" href="#">স্বাস্থ্য তথ্য <span>(৬,৪৪৮)</span>  </a></li>
+                                          <li><a dir="ltr" href="#"> জীবনের ভাবনা <span>(৬,২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">কম্পিউটার ও ইন্টারনেট<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">সাধারণ জ্ঞান<span>(২০৯)</span></a></li>
+                                          <li>
+										  <a dir="ltr" href="#">লাইফস্টাইল <span>(৬,৪৪৮)</span></a></li>
+                                          <li><a dir="ltr" href="#">স্বাস্থ্য তথ্য <span>(৬,৪৪৮)</span>  </a></li>
+                                          <li><a dir="ltr" href="#"> জীবনের ভাবনা <span>(৬,২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">কম্পিউটার ও ইন্টারনেট<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">সাধারণ জ্ঞান<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">লাইফস্টাইল <span >(৬,৪৪৮)</span> </a></li>
+                                          <li><a dir="ltr" href="#">স্বাস্থ্য তথ্য <span>(৬,৪৪৮)</span>  </a></li>
+                                          <li><a dir="ltr" href="#"> জীবনের ভাবনা <span>(৬,২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">কম্পিউটার ও ইন্টারনেট<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">সাধারণ জ্ঞান<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">লাইফস্টাইল <span >(৬,৪৪৮)</span> </a></li>
+										  <li><a dir="ltr" href="#"> জীবনের ভাবনা <span>(৬,২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">কম্পিউটার ও ইন্টারনেট<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">সাধারণ জ্ঞান<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">লাইফস্টাইল <span >(৬,৪৪৮)</span> </a></li>
+                                          <li><a dir="ltr" href="#">স্বাস্থ্য তথ্য <span>(৬,৪৪৮)</span>  </a></li>
+                                          <li><a dir="ltr" href="#"> জীবনের ভাবনা <span>(৬,২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">কম্পিউটার ও ইন্টারনেট<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">সাধারণ জ্ঞান<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">লাইফস্টাইল <span >(৬,৪৪৮)</span> </a></li>
+                                       </ul>
+                                       <div class="clear"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                 <div class="slider-container mb-65">
+                                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                       <!-- Indicators -->
+                                       <ol class="carousel-indicators">
+                                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                                       </ol>
+                                       <!-- Wrapper for slides -->
+								  <div class="carousel-inner">
+										<div class="item active">
+											<div class="text-wrap">
+												<hgroup>
+													<h4>
+													বাগেরহাটে ঘুরে দেখার মত দর্শনীয় জায়গা কোনগুলো?
+													</h4>
+												</hgroup>
+											 </div>
+										  <div class="overlay"></div>
+											<a href="#">
+												<img src="https://static.ajkerdeal.com/images/deals/254532301235753/smallimage1.jpg" />
+											</a>
+										</div>
+									  <div class="item">
+										<div class="text-wrap">
+											<hgroup>
+												<h4>
+												বাগেরহাটে ঘুরে দেখার মত দর্শনীয় জায়গা কোনগুলো?	
+												</h4>
+											</hgroup>
+										  </div>
+										  
+										   <div class="overlay"></div>
+										  <a href="#"><img src="images/question-images/slideimg2.jpg" /></a>
+										  
+										</div>
+										<div class="item">
+											<div class="text-wrap">
+											<hgroup>
+												<h4>
+													বাংলাদেশ সরকারের একটি নিজস্ব ছাপাখানা আছে যেটি বাংলাদেশ সরকারি মুদ্রণালয় (বি.জি) প্রেস হিসেবে পরিচিত। সরকারি বই সহ অন্যান্য ছাপা সামগ্রী এখান থেকেই ছাপানো হয়।
+												</h4>
+											</hgroup>
+										  </div>
+											<div class="overlay"></div>
+											<a href="#"><img src="images/question-images/slideimg1.jpg" /></a>
+										  
+										</div>
+									  </div>
+                                    
+                                    </div>
+                                 </div>
+                                 <!-- Nav tabs -->
+                                 <div class="ask-question-wrapper">
+                                    <div class="topic-select-wrapper">
+                                       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+										<div class="select-style">
+  <select>
+    <option value="volvo">টপিক নির্বাচন করুন</option>
+    <option value="saab">Saab Mercedes</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+</div>
+										 
+                                       </div>
+                                       <!-- /.nav-collapse -->
+                                       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                          <div class="star-ward-wrapper">
+                                             <input type="text" class="form-control" id="exampleInputEmail1" placeholder="স্টারওয়ার্ড  যোগ করুন">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="ask-question-wrapper">
+                                       <div class="">
+                                          <textarea class="form-control" rows="2" id="comment" placeholder="কি জানতে চান  এখানে প্রশ্ন করুন"></textarea>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="details-question-content-wrapper">
+                                    <div class="question-category-block-wrapper">
+                                       <button class="cat-button">রান্না-বান্না</button>
+                                       <button class="cat-button">খুদের চাল </button>
+                                    </div>
+                                    <div class="title-wrapper">
+                                       <h3 class="question-title">খুদের চাল কি ?এই চাল দিয়ে কিভাবে রান্না করতে হয়?</h3>
+                                    </div>
+                                    <div class="blog-user-name-wrapper">
+                                       <div class="post-user-image-block">
+                                          <img class="img-responsive img-circle" src="images/question-images/user.jpg" alt="User profile picture" >
+                                       </div>
+                                       <div class="user-info">
+                                          <div class="title">আব্দুল বাতেন </div>
+                                          <small class="grey-text">১৩ ঘণ্টা আগে উত্তর দিয়েছেন </small>
+                                       </div>
+                                    </div>
+                                    <div class="blog-content-wrapper">
+                                       <div class="content-with-image">
+                                       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+												<div class="blog-content">খুদের চাল: চালেরভাঙ্গা অংশকে অর্থাৎ ভাঙ্গা চালকে খুদের চালবলে। খুদের চালেরভাত: খুদের চাল বা ভাঙ্গা চাল দিয়ে রান্না করা ভাতকে বউয়া ভাত বা বউ ভাতও বলা হয়ে থাকে। উপকরণ: ১. খুদের চাল ৪০০ গ্রাম। ২. পেঁয়াজ-কুচি আধা কাপ। ৩. দারুচিনি ২ টুকরা। ৪. এলাচ ২টি। ৫. আদা 
+													<span class="blog-img-wrapper">
+															<img class="img-responsive" src="https://static.ajkerdeal.com/images/deals/363642701162551/smallimage1.jpg" alt="question image">
+													</span>
+												</div>
+											</div>
+                                       </div>
+                                
+                                    </div>
+                                    <div class="sharing-container">
+                                       <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                          <div style="margin-top:10px;">
+                                             <div class="post-like"><span ><img class="img-responsive" src="images/question-images/ic_like.svg"></span><span>৩০</span></div>
+                                             <div class="post-comment"><span ><img class="img-responsive" src="images/question-images/ic_comment.svg"> </span><span>১০</span></div>
+                                             <div class="post-share"><span ><img class="img-responsive" src="images/question-images/ic_share.svg"></span><span>৪ </span></div>
+                                          </div>
+                                       </div>
+                                       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                          <div class="answer-block-container">
+                                             <button class="give-answer-button"><span><img class="img-responsive" src="images/question-images/ic_pencil.svg"> </span>উত্তর দিন </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+								 
+			
+			
+			
+			                    <div class="details-question-content-wrapper">
+                                    <div class="question-category-block-wrapper">
+                                       <button class="cat-button">রান্না-বান্না</button>
+                                       <button class="cat-button">খুদের চাল </button>
+                                    </div>
+                                    <div class="title-wrapper">
+                                       <h3 class="question-title">খুদের চাল কি ?এই চাল দিয়ে কিভাবে রান্না করতে হয়?</h3>
+                                    </div>
+                                    <div class="blog-user-name-wrapper">
+                                       <div class="post-user-image-block">
+                                          <img class="img-responsive img-circle" src="images/question-images/user.jpg" alt="User profile picture" >
+                                       </div>
+                                       <div class="user-info">
+                                          <div class="title">আব্দুল বাতেন </div>
+                                          <small class="grey-text">১৩ ঘণ্টা আগে উত্তর দিয়েছেন </small>
+                                       </div>
+                                    </div>
+                                    <div class="blog-content-wrapper">
+                                       <div class="content-with-image">
+                                       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+												<div class="blog-content">খুদের চাল: চালেরভাঙ্গা অংশকে অর্থাৎ ভাঙ্গা চালকে খুদের চালবলে। খুদের চালেরভাত: খুদের চাল বা ভাঙ্গা চাল দিয়ে রান্না করা ভাতকে বউয়া ভাত বা বউ ভাতও বলা হয়ে থাকে। উপকরণ: ১. খুদের চাল ৪০০ গ্রাম। ২. পেঁয়াজ-কুচি আধা কাপ। ৩. দারুচিনি ২ টুকরা। ৪. এলাচ ২টি। ৫. আদা 
+													<div class="blog-img-wrapper">
+															<img class="img-responsive" src="https://static.ajkerdeal.com/images/deals/178522501130748/smallimage1.jpg" alt="question image">
+													</div>
+												</div>
+											</div>
+                                       </div>
+                                
+                                    </div>
+                                    <div class="sharing-container">
+                                       <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                          <div style="margin-top:10px;">
+                                             <div class="post-like"><span ><img class="img-responsive" src="images/question-images/ic_like.svg"></span><span>৩০</span></div>
+                                             <div class="post-comment"><span ><img class="img-responsive" src="images/question-images/ic_comment.svg"> </span><span>১০</span></div>
+                                             <div class="post-share"><span ><img class="img-responsive" src="images/question-images/ic_share.svg"></span><span>৪ </span></div>
+                                          </div>
+                                       </div>
+                                       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                          <div class="answer-block-container">
+                                             <button class="give-answer-button"><span><img class="img-responsive" src="images/question-images/ic_pencil.svg"> </span>উত্তর দিন </button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+			
+			
+			
+			
+							  
+							  </div>
+                     
+                           <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+							   <div class="sidebar-nav-fixed pull-right affix">
+								  <div class="sidebar-category-blog">
+									 <div class="cat-items-right-sidebar">
+										<span class="image-span-recent"><img class="img-responsive" src="images/question-images/ic_recent.svg" width="15" > </span>
+										<span class="cat-text-recent">সাম্প্রতিক</span>
+									 </div>
+									 <div class="cat-items-right-sidebar">
+										<span class="image-span">
+											<img class="img-responsive" src="images/question-images/ic_noanswer.svg"> 
+										</span>
+										<span class="cat-text">উত্তরবিহিন প্রশ্ন  </span>
+									 </div>
+									 <div class="cat-items-right-sidebar">
+										<span class="image-span">
+											<img class="img-responsive" src="images/question-images/ic_best-ans.svg"> 
+										</span>
+										<span class="cat-text">সেরা উত্তর </span>
+									 </div>
+									 <div class="cat-items-right-sidebar">
+										<span class="image-span">
+											<img class="img-responsive" src="images/question-images/ic_newques.svg"> 
+										</span>
+										<span class="cat-text"> নতুন প্রশ্ন</span>
+									 </div>
+									 <div class="cat-items-right-sidebar">
+										<span class="image-span">
+											<img class="img-responsive" src="images/question-images/ic_picked.svg"> 
+										</span>
+										<span class="cat-text">নির্বাচিত উত্তর   </span>
+									 </div>
+								  </div>
+								  <div  class="question-answer-block">
+									 <ul class="social-list">
+										<li class="question-block">
+										   <a href="https://www.facebook.com/ajkercrazydeal" target="#">
+											   <span class="number-span">১২০</span>
+											   <span  class="text-span">প্রশ্ন</span>
+										   </a>
+										</li>
+										<li class="answer-block">
+										   <a href="https://twitter.com/AjkerDeal" target="#">
+											   <span class="number-span">১২০</span>
+											   <span class="text-span">উত্তর </span>
+										   </a>
+										</li>
+									 </ul>
+								  </div>
+								  </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!-- bootstrap js -->
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+   </body>
+</html>
+

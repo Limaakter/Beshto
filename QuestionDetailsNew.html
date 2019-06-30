@@ -1,0 +1,510 @@
+
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Public Question</title>
+      <!-- Tell the browser to be responsive to screen width -->
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+      <!-- Bootstrap 3.3.7 -->
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/public-question-styles.css">
+	  <link rel="stylesheet" href="css/question-details-styles.css">
+      <link rel="stylesheet" href="css/bootstrap3-wysihtml5.min">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	    <script src='https://cloud.tinymce.com/5/tinymce.min.js?apiKey=your_API_key'></script>
+  <script>
+  tinymce.init({
+    selector: '#mytextarea'
+  });
+  </script>
+   </head>
+   <body>
+      <div class="container-fluid" style="padding-left:0;padding-right:0;">
+         <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<div class="header-top-wrapper">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                           <div class="question-logo">
+                              <img src="images/question-images/ic_proshno.svg" alt="question" height="42" width="42"> 
+                           </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                           <form class="navbar-form" role="search">
+                              <div class="input-group" style="width:100%;">
+                                 <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term" style="height: 36px;">
+                                 <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit" style="height: 36px;"><i class="glyphicon glyphicon-search"></i></button>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                           <div class="gossip-logo">
+                              <img src="images/question-images/ic_adda.svg"> 
+                           </div>
+                           <div class="top-navbar-right">
+							<div class="user-without-login" style="display:none;">
+                              <a href="#" target="_blank" class="login-user"> 
+                                 <img src="images/question-images/ic_user.svg" alt="question" height="16" width="16"> <span>লগইন </span>
+                              </a>
+							  </div>
+						
+							<div class="user-with-login dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  <span class="notification">
+									<img src="images/question-images/ic_notification.svg" alt="question" width="16" height="16">
+								  </span>
+								  <span class="user-img-span"><img class="img-responsive img-circle" src="images/question-images/user.jpg" width="20"></span>
+								  <span class="user-name">
+										তৌফিক পিয়াস
+									<img src="images/question-images/ic_down_arrow.svg" alt="question" width="16" height="16">
+								  </span>
+							</div>
+							  
+							  <ul class="dropdown-menu">
+    
+								  <li>
+									<a href="#" title="Select this card">	
+										<div class="user-login-icon">
+											<span><i class="fa fa-user" aria-hidden="true"></i></span><span>তৌফিক পিয়াস</span>																
+										</div>
+									</a>
+								  </li>
+								  <li>
+									<a href="#" title="Select this card">	
+										<div class="logout">
+																			
+											<span><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+											<span>লগআউট</span>
+																			
+										</div>	
+									</a>
+								  </li>
+								  
+								</ul>
+							  
+							  	<div class="user-login-wrapper" style="display:none;">
+									<div class="user-profile-menu user-profile-menu-right min-width-200 show" aria-labelledby="page-header-user-dropdown" x-placement="bottom-end">                   
+										<div class="user-login-icon">
+											<span><i class="fa fa-user" aria-hidden="true"></i></span><span>তৌফিক পিয়াস</span>																
+										</div>
+										
+										<div class="logout">
+											<span><i class="fa fa-sign-out" aria-hidden="true"></i></span>
+											<span>লগআউট</span>
+											
+										</div>																	              
+									</div>
+									               
+								</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+        
+      
+	  
+
+               <div style="background-color:#F5F5F5;">
+                  <div class="container">
+                     <div class="row">
+                        <div class="mb-15 mb-10">
+                     
+                              <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                 <div class="left-sidebar-container">
+								
+                                    <div class="sidenav">
+									 <div class="section-title">
+										<h2 class="title">টপিক </h2>
+									</div>
+                                       <ul>
+                                          <li><a dir="ltr" href="#">স্বাস্থ্য তথ্য <span>(৬,৪৪৮)</span>  </a></li>
+                                          <li><a dir="ltr" href="#"> জীবনের ভাবনা <span>(৬,২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">কম্পিউটার ও ইন্টারনেট<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">সাধারণ জ্ঞান<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">লাইফস্টাইল <span>(৬,৪৪৮)</span> </a></li>
+                                          <li><a dir="ltr" href="#">স্বাস্থ্য তথ্য <span>(৬,৪৪৮)</span>  </a></li>
+                                          <li><a dir="ltr" href="#"> জীবনের ভাবনা <span>(৬,২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">কম্পিউটার ও ইন্টারনেট<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">সাধারণ জ্ঞান<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">লাইফস্টাইল <span >(৬,৪৪৮)</span> </a></li>
+                                          <li><a dir="ltr" href="#">স্বাস্থ্য তথ্য <span>(৬,৪৪৮)</span>  </a></li>
+                                          <li><a dir="ltr" href="#"> জীবনের ভাবনা <span>(৬,২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">কম্পিউটার ও ইন্টারনেট<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">সাধারণ জ্ঞান<span>(২০৯)</span></a></li>
+                                          <li>
+										  <a dir="ltr" href="#">লাইফস্টাইল <span>(৬,৪৪৮)</span></a></li>
+                                          <li><a dir="ltr" href="#">স্বাস্থ্য তথ্য <span>(৬,৪৪৮)</span>  </a></li>
+                                          <li><a dir="ltr" href="#"> জীবনের ভাবনা <span>(৬,২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">কম্পিউটার ও ইন্টারনেট<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">সাধারণ জ্ঞান<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">লাইফস্টাইল <span >(৬,৪৪৮)</span> </a></li>
+                                          <li><a dir="ltr" href="#">স্বাস্থ্য তথ্য <span>(৬,৪৪৮)</span>  </a></li>
+                                          <li><a dir="ltr" href="#"> জীবনের ভাবনা <span>(৬,২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">কম্পিউটার ও ইন্টারনেট<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">সাধারণ জ্ঞান<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">লাইফস্টাইল <span >(৬,৪৪৮)</span> </a></li>
+										  <li><a dir="ltr" href="#"> জীবনের ভাবনা <span>(৬,২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">কম্পিউটার ও ইন্টারনেট<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">সাধারণ জ্ঞান<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">লাইফস্টাইল <span >(৬,৪৪৮)</span> </a></li>
+                                          <li><a dir="ltr" href="#">স্বাস্থ্য তথ্য <span>(৬,৪৪৮)</span>  </a></li>
+                                          <li><a dir="ltr" href="#"> জীবনের ভাবনা <span>(৬,২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">কম্পিউটার ও ইন্টারনেট<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">সাধারণ জ্ঞান<span>(২০৯)</span></a></li>
+                                          <li><a dir="ltr" href="#">লাইফস্টাইল <span >(৬,৪৪৮)</span> </a></li>
+                                       </ul>
+                                       <div class="clear"></div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                 
+			
+			          
+			
+													<!--popular-answer-wrapper-start -->
+				
+					<div class="col-md-12" style="padding:0!important; margin-top:60px; ">
+					
+		     <div class="details-question-content-wrapper">
+                                    <div class="question-category-block-wrapper">
+                                      <a href="#"> <button class="cat-button">রান্না-বান্না</button></a>
+                                      <a href="#">  <button class="cat-button">খুদের চাল </button></a>
+                                    </div>
+                                    <div class="title-wrapper">
+                                       <a href="#"><h3 class="question-title">খুদের চাল কি ?এই চাল দিয়ে কিভাবে রান্না করতে হয়?</h3></a>
+                                    </div>
+                        
+                         
+                                    <div class="sharing-container">
+                                       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                          <div class="post-watch-wrapper">
+                                    <span class="post-answer">২টি উত্তর আছে</span>
+                                             <a href="#"><span class="eye-icon"><img class="img-responsive" src="images/question-images/ic_eye.svg"></span><span class="post-watch">৪৭ বার দেখা হয়েছে</span></a>
+                                          
+                                          </div>
+                                       </div>
+                                       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                          <div class="answer-block-container">
+										     <div class="post-share-details"><a href="#"><span><img class="img-responsive" src="images/question-images/ic_share.svg"></span></a></div>
+                                           <a href="#"><button class="give-answer-button"><span><img class="img-responsive" src="images/question-images/ic_pencil.svg"> </span>উত্তর দিন </button></a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+					
+					<div class="earn-points-wrapper">
+	
+						<div class="popular-recent-answer-wrapper">
+						
+							<div class="top-navbar-answer">
+						      <div class="tab" role="tabpanel">
+           
+								<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">জনপ্রিয় উত্তর</a></li>
+									<li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">সাম্প্রতিক উত্তর</a></li>
+							  
+								</ul>
+								</div>
+						
+							</div>
+						
+						
+							<div class="top-navbar-answer" style="display:none;">
+				
+											<ul class="nav nav-tabs navbar-right">
+											  <li role="presentation"><a href="#">জনপ্রিয় উত্তর</a></li>
+											  <li role="presentation" class="active"><a href="#">সাম্প্রতিক উত্তর</a></li>
+							
+											</ul>
+											
+										</div>
+							<div class="popular-answer-inner-wrapper">
+								
+								<div  class="image-blog-wrapper">
+									
+									<div class="user-image-wrapper">
+										<img class="img-responsive img-circle" src="images/question-images/user.jpg" alt="User profile picture">
+									</div>
+									
+									
+									<div class="user-info-new">
+									<div  class="user-text-top-div">
+										<div class="user-name-new">আব্দুল বাতেন 
+										</div>
+										<div class="user-name-button">মহাগুরু
+										</div>
+									</div>
+										<span class="user-text-secondery">ডিজাইনার, আইটীবাড়ি</span>
+									
+									</div>
+									
+									<div class="user-info-logo">
+											<img src="images/question-images/component.png" class="mcategory-merchant-image" >
+										</div>
+								</div>
+								
+								<div class="popular-answer-content">
+									<div class="popular-answer-content-image-wrapper">
+										<img src="https://static.ajkerdeal.com/images/deals/233382907122712/1.jpg" alt="" >
+										
+									</div>
+								</div>
+								
+								<div class="popular-answer-details-text">
+									<span>
+									পেটে মেদ বা চর্বি হলে চলা-ফেরায় যেমন কষ্ট হয়, তেমনি নষ্ট হয় সৌন্দর্যও। অনেকে আছেন খুব বেশি মোটা না কিন্তু পেটে অনেক মেদ কিংবা দেহের কিছু কিছু স্থানে মেদ জমায় খুবই অস্বস্তি বোধ করেন। কোনো ভালো পোশাক পড়লেও ভালো লাগে না। বিশেষ করে সারা শরীরের তুলনায় পেটে মেদ জমে বেশি এবং অত্যন্ত দুঃখজনক হলেও সত্য যে পেটের মেদ কমাতে সময় একটু বেশি লাগে। তবে নিয়মিত সঠিক নিয়মে ব্যায়াম করতে পারলে পেটের মেদ দূর করা সম্ভব। পাশাপাশি খাদ্যাভ্যাসে কিছু পরিবর্তন আনতে হবে। একবারে পেট ভরে বেশি খাবার না খেয়ে অল্প অল্প করে নিয়ে পাঁচ-ছয়বারে খাবেন। খাবার খাওয়ার আধা ঘণ্টা পরে পানি খাবেন। রাতের খাবার সাড়ে ৮টার মধ্যে শেষ করতে হবে অথবা ঘুমানোর দুই ঘণ্টা আগে রাতের খাবার শেষ করতে হবে। এগুলোর পাশাপাশি নিয়মিত ব্যায়াম করলে পেটের মেদ নিয়ন্ত্রণে রাখা সম্ভব। খাবার তালিকায় রাখতে হবে ফল, সবজি, লাল চালের ভাত, লাল আটার রুটি, মুরগি, মাছ, লো ফ্যাট দুধ ইত্যাদি।শরীরের এই বাড়তি মেদ কিভাবে দূর করা যায় তার কয়েকটি সহজ উপায় ১
+									</span>
+									<p>১. প্রতিদিনের সকালটা শুরু হোক লেবুর সরবত দিয়ে। এই পদ্ধতি পেটের মেদ কমানোর সবচেয়ে কার্যকরী ১টি উপায়। ১ গ্লাস হালকা গরম পানিতে লেবু চিপে সরবত করে সঙ্গে একটু লবণ মিশিয়ে নিন। ইচ্ছে হলে একটু মধুও মিশিয়ে নিতে পারেন। কিন্তু চিনি মিশাবেন না। প্রতিদিন সকালে পানীয়টি পান করুন। এই পানীয় আপনার বিপাক প্রক্রিয়া বাড়িয়ে পেটের মেদ কমাতে সাহায্য করবে।</p>
+									<p>২. সাদা ভাত কম খান অথবা কিছুদিনের জন্য ছেড়ে দিন সাদা চালের ভাত খাওয়া। সাদা চালের ভাতের বদলে বিভিন্ন গম জাতীয় শস্য যুক্ত করে নিন আপনার প্রতিদিনের খাদ্য তালিকায়। তাছাড়া লাল চালের ভাত, গমের রুটি, ওটস, অন্যান্য শস্য যুক্ত করে নিতে পারেন।</p>
+									<p>৩.খুদের চাল: চালেরভাঙ্গা অংশকে অর্থাৎ ভাঙ্গা চালকে খুদের চালবলে। খুদের চালেরভাত: খুদের চাল বা ভাঙ্গা চাল দিয়ে রান্না করা ভাতকে বউয়া ভাত বা বউ ভাতও বলা হয়ে থাকে।৩. চিনি জাতীয় খাবার থেকে দূরেই থাকুন অর্থাৎ চিনিকে না বলুন। এছাড়া মিষ্টি জাতীয় খাবার যেমন মিষ্টি, চকলেট, আইসক্রিম, ফিরনী, সেমাই ইত্যাদি থেকে কিছুদিনের জন্য বিদায় নিয়ে নিন। 
+									<p>৪. উচ্চ তেলযুক্ত খাবার এবং কোল্ড ড্রিঙ্কসগুলো শরীরের বিভিন্ন জায়গায় চর্বি জমিয়ে রাখে। যেমন আমাদের পেট কিংবা উরু। সুতরাং বুঝেই ফেলেছেন যে এই খাবারগুলো তালিকা থেকে বাদ দিয়ে দিতে হবে।</p>
+									<p>৫. উচ্চ তেলযুক্ত খাবার এবং কোল্ড ড্রিঙ্কসগুলো শরীরের বিভিন্ন জায়গায় চর্বি জমিয়ে রাখে। যেমন আমাদের পেট কিংবা উরু। সুতরাং বুঝেই ফেলেছেন যে এই খাবারগুলো তালিকা থেকে বাদ দিয়ে দিতে হবে।৫. পেটের মেদ কাটিয়ে উঠতে চাইলে প্রতিদিন প্রচুর পরিমাণে পানি পান করতে হবে। তাহলে শরীরের বিপাকের হার বাড়ানোর পাশাপাশি শরীরের বিষাক্ত উপাদানগুলোকে দূর করে দিবে। তাই পানিকে প্রাকৃতিক ক্লিঞ্জার বলা হয়।
+								
+								</div>
+								<div class="social-sharing-container">
+									<div class="col-md-6">
+										<div class="comment-text">৫৫ মিনিট আগে মন্তব্য (৩)</div>
+									</div>
+									<div class="col-md-6">
+									<div class="bottom-wrapper-social-media">
+										<div class="share-post">
+											<span><img class="img-responsive" src="images/question-images/ic_share.svg" width="15"></span><span>৪ </span>
+										</div>
+										<div class="post-unlike">
+											<span><img class="img-responsive" src="images/question-images/ic_dislike.svg" width="15"></span><span>৫৫</span>
+										</div>
+										<div class="like-button">
+											<span><img class="img-responsive" src="images/question-images/ic_like.svg" width="15"></span><span>৪ </span>
+										</div>
+									</div>
+									</div>
+									
+								</div>
+								
+								
+																											
+							</div>
+							
+							<div class="recent-question-inner-wrap">
+							
+								<div  class="image-blog-wrapper">
+									
+									<div class="user-image-wrapper">
+										<img class="img-responsive img-circle" src="images/question-images/user.jpg" alt="User profile picture">
+									</div>
+									
+									
+									<div class="user-info-new">
+									<div  class="user-text-top-div">
+										<div class="user-name-new">আব্দুল বাতেন 
+										</div>
+										<div class="user-name-button">মহাগুরু
+										</div>
+									</div>
+										<span class="user-text-secondery">ডিজাইনার, আইটীবাড়ি</span>
+									
+									</div>
+									
+									<div class="user-info-logo">
+											<img src="images/question-images/component.png" class="mcategory-merchant-image" >
+										</div>
+								</div>
+								
+								<div class="popular-answer-content">
+									<div class="popular-answer-content-image-wrapper">
+										<img src="https://static.ajkerdeal.com/images/deals/233382907122712/1.jpg" alt="" >
+										
+									</div>
+								</div>
+								
+								<div class="popular-answer-details-text">
+									<span>
+									পেটে মেদ বা চর্বি হলে চলা-ফেরায় যেমন কষ্ট হয়, তেমনি নষ্ট হয় সৌন্দর্যও। অনেকে আছেন খুব বেশি মোটা না কিন্তু পেটে অনেক মেদ কিংবা দেহের কিছু কিছু স্থানে মেদ জমায় খুবই অস্বস্তি বোধ করেন। কোনো ভালো পোশাক পড়লেও ভালো লাগে না। বিশেষ করে সারা শরীরের তুলনায় পেটে মেদ জমে বেশি এবং অত্যন্ত দুঃখজনক হলেও সত্য যে পেটের মেদ কমাতে সময় একটু বেশি লাগে। তবে নিয়মিত সঠিক নিয়মে ব্যায়াম করতে পারলে পেটের মেদ দূর করা সম্ভব। পাশাপাশি খাদ্যাভ্যাসে কিছু পরিবর্তন আনতে হবে। একবারে পেট ভরে বেশি খাবার না খেয়ে অল্প অল্প করে নিয়ে পাঁচ-ছয়বারে খাবেন। খাবার খাওয়ার আধা ঘণ্টা পরে পানি খাবেন। রাতের খাবার সাড়ে ৮টার মধ্যে শেষ করতে হবে অথবা ঘুমানোর দুই ঘণ্টা আগে রাতের খাবার শেষ করতে হবে। এগুলোর পাশাপাশি নিয়মিত ব্যায়াম করলে পেটের মেদ নিয়ন্ত্রণে রাখা সম্ভব। খাবার তালিকায় রাখতে হবে ফল, সবজি, লাল চালের ভাত, লাল আটার রুটি, মুরগি, মাছ, লো ফ্যাট দুধ ইত্যাদি।শরীরের এই বাড়তি মেদ কিভাবে দূর করা যায় তার কয়েকটি সহজ উপায় ১
+									</span>
+									<p>১. প্রতিদিনের সকালটা শুরু হোক লেবুর সরবত দিয়ে। এই পদ্ধতি পেটের মেদ কমানোর সবচেয়ে কার্যকরী ১টি উপায়। ১ গ্লাস হালকা গরম পানিতে লেবু চিপে সরবত করে সঙ্গে একটু লবণ মিশিয়ে নিন। ইচ্ছে হলে একটু মধুও মিশিয়ে নিতে পারেন। কিন্তু চিনি মিশাবেন না। প্রতিদিন সকালে পানীয়টি পান করুন। এই পানীয় আপনার বিপাক প্রক্রিয়া বাড়িয়ে পেটের মেদ কমাতে সাহায্য করবে।</p>
+									<p>২. সাদা ভাত কম খান অথবা কিছুদিনের জন্য ছেড়ে দিন সাদা চালের ভাত খাওয়া। সাদা চালের ভাতের বদলে বিভিন্ন গম জাতীয় শস্য যুক্ত করে নিন আপনার প্রতিদিনের খাদ্য তালিকায়। তাছাড়া লাল চালের ভাত, গমের রুটি, ওটস, অন্যান্য শস্য যুক্ত করে নিতে পারেন।</p>
+									<p>৩.খুদের চাল: চালেরভাঙ্গা অংশকে অর্থাৎ ভাঙ্গা চালকে খুদের চালবলে। খুদের চালেরভাত: খুদের চাল বা ভাঙ্গা চাল দিয়ে রান্না করা ভাতকে বউয়া ভাত বা বউ ভাতও বলা হয়ে থাকে।৩. চিনি জাতীয় খাবার থেকে দূরেই থাকুন অর্থাৎ চিনিকে না বলুন। এছাড়া মিষ্টি জাতীয় খাবার যেমন মিষ্টি, চকলেট, আইসক্রিম, ফিরনী, সেমাই ইত্যাদি থেকে কিছুদিনের জন্য বিদায় নিয়ে নিন। 
+									<p>৪. উচ্চ তেলযুক্ত খাবার এবং কোল্ড ড্রিঙ্কসগুলো শরীরের বিভিন্ন জায়গায় চর্বি জমিয়ে রাখে। যেমন আমাদের পেট কিংবা উরু। সুতরাং বুঝেই ফেলেছেন যে এই খাবারগুলো তালিকা থেকে বাদ দিয়ে দিতে হবে।</p>
+									<p>৫. উচ্চ তেলযুক্ত খাবার এবং কোল্ড ড্রিঙ্কসগুলো শরীরের বিভিন্ন জায়গায় চর্বি জমিয়ে রাখে। যেমন আমাদের পেট কিংবা উরু। সুতরাং বুঝেই ফেলেছেন যে এই খাবারগুলো তালিকা থেকে বাদ দিয়ে দিতে হবে।৫. পেটের মেদ কাটিয়ে উঠতে চাইলে প্রতিদিন প্রচুর পরিমাণে পানি পান করতে হবে। তাহলে শরীরের বিপাকের হার বাড়ানোর পাশাপাশি শরীরের বিষাক্ত উপাদানগুলোকে দূর করে দিবে। তাই পানিকে প্রাকৃতিক ক্লিঞ্জার বলা হয়।
+								
+								</div>
+								<div class="social-sharing-container">
+									<div class="col-md-6">
+										<div class="comment-text">৫৫ মিনিট আগে মন্তব্য (৩)</div>
+									</div>
+									<div class="col-md-6">
+									<div class="bottom-wrapper-social-media">
+										<div class="share-post">
+											<span><img class="img-responsive" src="images/question-images/ic_share.svg" width="15"></span><span>৪ </span>
+										</div>
+										<div class="post-unlike">
+											<span><img class="img-responsive" src="images/question-images/ic_dislike.svg" width="15"></span><span>৫৫</span>
+										</div>
+										<div class="like-button">
+											<span><img class="img-responsive" src="images/question-images/ic_like.svg" width="15"></span><span>৪ </span>
+										</div>
+									</div>
+									</div>
+									
+								</div>
+								
+							
+							
+							</div>
+							
+							
+							
+							<div class="earn-points-content">
+								<div class="earn-points-content-inner">
+									<span class="earn-points-logo" style="float:left;">
+									<img class="img-responsive" src="images/question-images/ic_ansAvatar.svg" width="75" height="49">
+									</span>
+									<span class="earn-points-text">আপনি চাইলে এই প্রশ্নের উত্তর দিয়ে পয়েন্ট অর্জন করতে পারেন</span>
+								</div>
+							
+							</div>
+							
+							
+							<div class="answer-write-wrap">
+							
+								  <form method="post">
+									<textarea id="mytextarea">Hello, World!</textarea>
+								  </form>
+							
+							</div>
+										 <div class="additional-answer-button-container">
+										<div class="image-upload-wrapper">
+											
+												<div class="file btn btn-light image-upload-button">
+													উত্তরের সাথে প্রাসঙ্গিক ছবি দিন
+													<img class="img-responsive" src="images/question-images/ic_image.svg">
+														<input type="file" name="file"/>
+													</div>
+											</div>
+
+											<div class="btn btn-identity">
+											<input type="checkbox" id="test1">
+											<label for="test1"></label>পরিচয় গোপন রাখবো </div>
+											
+						
+											
+											<div class="submit-wrapper">
+											
+												<div class="btn button-submit">
+													সাবমিট
+													
+												</div>
+											</div>
+										</div>
+										
+										
+										
+										
+						</div>
+						</div>
+					
+					</div>
+					
+				<!--popular-answer-wrapper-end -->
+					
+			
+							  </div>
+                     
+                           <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="sidebar-nav-fixed pull-right affix">
+								  <div class="sidebar-category-blog">
+									 <div class="cat-items-right-sidebar">
+										<span class="image-span-recent"><img class="img-responsive" src="images/question-images/ic_recent.svg" width="15"> </span>
+										<span class="cat-text-recent">সাম্প্রতিক</span>
+									 </div>
+									 <div class="cat-items-right-sidebar">
+										<span class="image-span">
+											<img class="img-responsive" src="images/question-images/ic_noanswer.svg"> 
+										</span>
+										<span class="cat-text">উত্তরবিহিন প্রশ্ন  </span>
+									 </div>
+									 <div class="cat-items-right-sidebar">
+										<span class="image-span">
+											<img class="img-responsive" src="images/question-images/ic_best-ans.svg"> 
+										</span>
+										<span class="cat-text">সেরা উত্তর </span>
+									 </div>
+									 <div class="cat-items-right-sidebar">
+										<span class="image-span">
+											<img class="img-responsive" src="images/question-images/ic_newques.svg"> 
+										</span>
+										<span class="cat-text"> নতুন প্রশ্ন</span>
+									 </div>
+									 <div class="cat-items-right-sidebar">
+										<span class="image-span">
+											<img class="img-responsive" src="images/question-images/ic_picked.svg"> 
+										</span>
+										<span class="cat-text">নির্বাচিত উত্তর   </span>
+									 </div>
+								  </div>
+								  <div class="question-answer-block">
+									 <ul class="social-list">
+										<li class="question-block">
+										   <a href="https://www.facebook.com/ajkercrazydeal" target="#">
+											   <span class="number-span">১২০</span>
+											   <span class="text-span">প্রশ্ন</span>
+										   </a>
+										</li>
+										<li class="answer-block">
+										   <a href="https://twitter.com/AjkerDeal" target="#">
+											   <span class="number-span">১২০</span>
+											   <span class="text-span">উত্তর </span>
+										   </a>
+										</li>
+									 </ul>
+								  </div>
+								  </div>
+                           </div>
+						   
+				<div onclick="topFunction()" id="toptomovebuttton" title="Go to top"><img class="img-responsive" src="images/question-images/ic_move_to_top.svg" width="56" height="56"> </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+     
+	  
+	        </div>
+         </div>
+      </div>
+	  
+      </div>
+	  
+	  <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("toptomovebuttton").style.display = "block";
+  } else {
+    document.getElementById("toptomovebuttton").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+      <!-- bootstrap js -->
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+   </body>
+</html>
+
